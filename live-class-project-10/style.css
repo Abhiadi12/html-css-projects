@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url("https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg?w=740&t=st=1658736372~exp=1658736972~hmac=311c3078c75c077f05413965e0086087aa07936d8a53d305cd8db53f76a2d4f4");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-root {
+  /* border: 1px solid red; */
+  display: flex;
+  height: 80px;
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+.logo-container {
+  width: 30%;
+  /* border: 1px solid red; */
+}
+
+.logo-container img {
+  transform: scale(0.9);
+}
+
+.links-container {
+  width: 64%;
+  display: flex;
+  border-bottom: 2px solid white;
+  padding-bottom: 3em;
+  position: relative;
+}
+
+.links {
+  display: flex;
+  /* border: 1px solid red; */
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  opacity: 0.8;
+}
+
+
+.link a {
+  text-decoration: none;
+  color: white;
+  padding: 1.4em;
+  font-weight: bold;
+  transition: 0.5s ease;
+  display: inline-block;
+}
+
+.link a:hover {
+  transform: scale(1.2);
+}
+
+.contact-container {
+  /* padding-left: 2.5em; */
+  color: white;
+  /* border: 1px solid red; */
+  /* padding-bottom: 1em; */
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.contact-container img {
+  margin-top: 6px; 
+  margin-right: 6px;
+}
+
+.row-1 {
+  width: 100%;
+  margin-top: 120px;
+  display: flex;
+}
+
+.row-1-col-1 {
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+  width: 65%;
+}
+
+.row-1-col-1 h4 {
+  width: 85%;
+  /* border: 1px solid blue; */
+  font-size: 64px;
+  color: white;
+  margin-left:100px;
+  letter-spacing: 1.25px;
+}
+
+.row-1-col-2 {
+  /* border: 1px solid red; */
+  margin-top: -70px;
+  margin-left: auto;
+  margin-right: 5%;
+  position: relative;
+}
+
+.row-1-col-2::after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 100px;
+  background-color: rgb(255, 255, 255, 0.8);
+  position: absolute;
+  transform: rotate(90deg);
+  right: 0;
+  z-index: -2;
+}
+
+.row-1-col-2 .card1::after {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 40px;
+  bottom: 2px;
+}
+
+.asset-div {
+  max-width: 280px;
+  /* border: 1px solid red; */
+  background: rgb(48,69,86);
+  padding: 20px;
+}
+
+.description {
+  color: white;
+  padding-top: 8px;
+  font-weight: bold;
+  letter-spacing: 0.35px;
+}
+
+.row-2 {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.row-2-col-1 {
+  width: 40%;
+  margin-left:70px;
+  /* border: 1px solid blue; */
+  padding-top: 3.5em;
+}
+
+.row-2-col-1 button {
+  width: 230px;
+  height: 60px;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 25px;
+}
+
+.row-2-col-2 {
+  width: 50%;
+  padding-top: 4em;
+  margin-left: 30px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.row-2-col-2::after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 100px;
+  background-color: rgb(255, 255, 255, 0.8);
+  position: absolute;
+  top: 45%;
+  left: 240px;
+  z-index: -2;
+}
+
+.row-2-col-2 .card2::after {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 41%;
+  left: 330px;
+}
+
+button:hover {
+  cursor: pointer;
+}
