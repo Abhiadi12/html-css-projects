@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@316;400&family=Oswald:wght@300&family=Red+Rose:wght@300;400&display=swap');
+
+* {  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:  url("./assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Red Rose', cursive;
+}
+
+.navbar {
+  display: flex;
+  background-color: black;
+  color: white;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar img {
+  transform: scale(0.54);
+}
+
+.line {
+  background-color: white;
+  height: 54px;
+  width: 1px;
+}
+
+.list {
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.list-item {
+  color: white;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 14px;
+  padding-right: 4rem;
+}
+
+.list-item:hover {
+  cursor: pointer;
+}
+
+.list-item:first-child {
+  padding-left: 2.7rem;
+}
+
+.list-item:first-child::after {
+  content: '';
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 6px;
+  margin-top: -4px;
+}
+
+.button-small {
+  position: absolute;
+  top: 27%;
+  right: 60px;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-color: #9559af;
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+
+}
+
+.hero {
+  width: 60%;
+  max-width: 600px;
+  text-align: center;
+  margin-left:  auto;
+  margin-right: auto;
+  margin-top: 7%;
+}
+
+.hero-heading {
+  font-size: 48px;
+  letter-spacing: 0.65px;
+  color: white;
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 18px;
+  letter-spacing: 0.35px;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 2em;
+}
+
+.button-large {
+  width: 180px;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-color: #8D3DAF;
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  transform: scale(1.2);
+}
+
+button:hover {
+  cursor: pointer;
+}
