@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+header {
+  background-color: #6d7879;
+  height: auto;
+  position: relative;
+  padding-top: 10px;
+  padding-left: 70px;
+}
+
+
+.navbar {
+  display: flex;
+  height: 50px;
+  /* border: 1px solid red; */
+}
+
+.logo-container img {
+  transform: scale(0.6);
+}
+
+.links {
+  list-style-type: none;
+  position: absolute;
+  right: 25%;
+  color: white;
+}
+
+.btn-wrapper {
+  position: absolute;
+  right: 25px;
+  /* border: 1px solid red; */
+}
+
+.transparent-btn {
+  background: transparent;
+  border: 1px solid #AF9D5A;
+  color: white;
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 120px;
+  letter-spacing: 0.35px;
+  transition: 1s ease;
+}
+
+.transparent-btn:hover {
+  border: none;
+}
+
+.links li {
+  display: inline-block;
+  /* border: 1px solid red; */
+  margin-right: .6em;
+  font-size: 15px;
+  letter-spacing: 0.35px;
+  padding: 14px 14px 14px 14px;
+  opacity: 0.9;
+}
+
+.hero-section {
+  display: flex;
+}
+
+.side-Image1 {
+  width: 25%;
+  /* border: 1px solid red; */
+  min-width: 250px;
+  margin-left: 60px;
+  padding-top: 2em;
+  padding-bottom: 40px;
+
+}
+
+.side-Image1 img {
+  width: 100%;
+  height: 350px;
+}
+
+.hero-section-description {
+  /* border: 1px solid red; */
+  width: 40%;
+  margin-left: 17%;
+  padding-top: 60px;
+}
+
+.hero-section-description h5 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  max-width: 400px;
+  line-height: 50px;
+}
+
+.hero-section-description p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  line-height: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  max-width: 360px;
+  opacity: 0.8;
+}
+
+.input-wrapper {
+  width: 350px;
+  background-color: #ffffff;
+}
+
+#email {
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+::placeholder {
+  color: #a1a8a8;
+}
+
+.green-btn {
+  background-color: rgb(4, 170, 109, 0.8)!important; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 3px;
+  margin-left: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* home section */
+
+.home {
+  width: 84%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  padding-top: 40px;
+}
+
+.heading {
+  /* border: 1px solid red; */
+  text-align: center;
+  max-width: 360px;
+  margin: 0 auto;
+  font-size: 24px;
+  letter-spacing: 0.35px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.heading-2 {
+  text-align: center;
+  max-width: 360px;
+  margin: 0 auto;
+  font-size: 28px;
+  letter-spacing: 0.35px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  /* border: 1px solid red; */
+  display: flex;
+  padding-left: 13%;
+  margin-bottom: 30px;
+}
+
+.stat {
+  width: 22%;
+  /* border: 1px solid red; */
+  margin-right: 20px;
+
+}
+
+.stat h4 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.45px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  /* transform: scale(1.2); */
+
+}
+
+.stat p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+  color:  #5f6869
+}
+
+.team-meating {
+  width: 100%;
+  height: auto;
+}
+
+.team-meating img {
+  width: 100%;
+  height: 400px;
+}
+
+/* about us */
+
+.about-us {
+  width: 84%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.heading-container {
+  max-width: 320px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.about-us-desc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  /* border: 1px solid red; */
+}
+
+.imagecon, .imagecon-right {
+  width: 40%;
+  position: relative;
+}
+
+.imagecon  img {
+  height: 400px;
+  width: 400px;
+  max-width: 80%;
+}
+
+.imagecon-right img{
+  height: 400px;
+  width: 400px;
+  max-width: 80%;
+  
+}
+
+.imagecon img :nth-child(2n + 1) {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 0px;
+}
+
+.left {
+  width: 50%;
+  /* border: 1px solid red; */
+  padding-top: 50px;
+}
+
+.left h4 {
+  max-width: 300px;
+  font-size: 24px;
+  letter-spacing: 0.35px;
+  line-height: 35px;
+}
+
+.exc-left {
+  padding-left: 10%;
+}
+
+.left p {
+  color: #6d7879;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  line-height: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 360px;
+  opacity: 0.8;
+}
+
+.left button {
+  margin: 0px !important;
+}
+
+.meet {
+  display: flex;
+  width: 84%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 32px;
+}
+
+.meet h4 {
+  max-width: 300px;
+  font-size: 28px;
+  letter-spacing: 0.35px;
+  line-height: 35px;
+}
+
+.subtitle1 {
+  color: #6d7879;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  line-height: 26px;
+  max-width: 360px;
+  opacity: 0.8;
+}
+/* members */
+.members {
+  width: 84%;
+  margin: 0 auto;
+}
+.peoples {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  margin-bottom: 1.5em;
+}
+
+.member-img {
+  height: 300px;
+  width: 220px;
+}
+
+.subtitle2 {
+  color: #6d7879;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  line-height: 20px;
+  max-width: 240px;
+  opacity: 0.8;
+}
+
+.name {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.see-more {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* footer */
+
+footer {
+  background-color: #5f6869;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+}
+
+.start {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom:   2px solid #707b80;
+}
+
+.social-links img{
+  transform: scale(0.73);
+}
+
+.link-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.box {
+  list-style-type: none;
+  width: 20%;
+}
+
+.link_name {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.link_name ~ li a {
+  text-decoration: none;
+  padding-bottom: 15px;
+  display: inline-block;
+  color: rgba(235, 228, 228, 0.8);
+}
+
+img[alt="footer-logo"] {
+  transform: scale(0.73);
+}
+
