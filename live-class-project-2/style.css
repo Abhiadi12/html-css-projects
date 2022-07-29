@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@316;400&family=Oswald:wght@300&family=Red+Rose:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+body {
+  padding: 3%;
+  background:  linear-gradient(rgba(136, 90, 161, 0.7), rgba(136, 90, 161, 0.7))
+  , url("./assets/pexels-maxyne-barcel-10402282\ 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Red Rose', cursive;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar img {
+  width: 120px;
+  padding-top:10px;
+}
+
+.navbar:last-child {
+  padding-top: .3rem;
+  padding-right: 10%;
+}
+
+.list {
+  display: flex;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+}
+.list-item {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 24px;
+  color: #F4BE2C;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+.list-item:hover {
+  cursor: pointer;
+}
+.button-small{
+  padding: 10px 24px;
+  outline: none;
+  border: none;
+  background-color: rgb(223, 86, 131);
+  color: white;
+  letter-spacing: 0.25px;
+  font-weight: 700;
+  border-radius: 2px;
+  font-size: 20px;
+}
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+.hero {
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1em;
+  letter-spacing: 0.35px;
+  position: relative;
+  line-height: 100px;
+}
+
+.hero-heading {
+  color: #F4BE2C;
+  font-size: 100px;
+  text-align: center;
+}
+
+.button-large {
+  color: white;
+  outline: none;
+  border: none;
+  height: 40px;
+  padding: 12px 20px;
+  text-align: center;
+  background-color: rgb(223, 86, 131);
+  font-weight: 700;
+  transform: scale(1.1);
+}
+
+.bottom {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transform: scale(0.8);
+}
+
+button:hover {
+  cursor: pointer;
+}
