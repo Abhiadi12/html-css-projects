@@ -613,7 +613,7 @@ section:nth-child(even) {
   width: 25%;
   display: flex;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
 }
 
 @media only screen and (max-width: 600px) {
