@@ -12,6 +12,7 @@
 
 ## Time Taken:
 
-- 5h to complete.
+- 6h to complete.
+- 1h for responsiveness.
 
 ![screenshoot](./live-class-project-10/project-10.png)
