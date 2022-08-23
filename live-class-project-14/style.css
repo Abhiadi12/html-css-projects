@@ -23,6 +23,10 @@ body {
   display: flex;
 }
 
+.container-sm {
+  display: none;
+}
+
 .image-group {
   position: sticky;
   top: 0;
@@ -106,12 +110,17 @@ nav li:hover {
   padding: 0 60px;
 }
 
-.sub-title {
+.sub-title,
+.sub-title-sm {
   display: inline-block;
   margin-top: 80px;
   font-weight: 700;
   font-size: 2.5em;
   opacity: 0.6;
+}
+
+.sub-title-sm {
+  display: none;
 }
 
 .btn-package {
@@ -206,4 +215,107 @@ nav li:hover {
 .arrow {
   transform: scale(0.5);
   margin-left: 15%;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    display: none;
+  }
+  .container-sm {
+    display: block;
+    padding: 1em;
+  }
+  .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .sm-link li {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  .title-container {
+    margin: 20px;
+  }
+  .filled {
+    margin-left: 0px;
+  }
+  .package {
+    padding: 0 30px;
+  }
+  .featured-container {
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 0;
+  }
+  .sm-quote {
+    margin-top: 20px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .socials {
+    position: relative;
+    top: 40px;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .hero-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-container {
+    display: block;
+  }
+  .title-container h1 {
+    display: none;
+  }
+  .sub-title {
+    display: none;
+  }
+  .sub-title-sm {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2em;
+  }
+  .btn-package {
+    width: 100%;
+    margin-top: 0;
+  }
+  .package {
+    padding: 0 15px;
+  }
+  .hero-image {
+    background-image: url(./assets/pexels-rfstudio-3819572.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: block;
+    position: relative;
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.6em;
+    font-weight: bold;
+  }
+  .sm-quote {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .btn-package {
+    font-size: 0.7em;
+  }
 }
