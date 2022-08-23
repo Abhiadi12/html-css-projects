@@ -21,7 +21,27 @@
           <span class="link">Blog</span>
           <button class="btn-blue">FREE TRIAL</button>
         </div>
+        <div class="hamburger">
+          <span
+            style="font-size: 30px; cursor: pointer; color: white"
+            onclick="openNav()"
+            >&#9776;
+          </span>
+        </div>
       </nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <span class="link active">Home</span>
+        <span class="link">Services</span>
+        <span class="link">Pricing</span>
+        <span class="link">Testimonials</span>
+        <span class="link">Blog</span>
+        <div class="btn-container">
+          <button class="btn-blue">FREE TRIAL</button>
+        </div>
+      </div>
       <div class="heading-section">
         <div class="left-section">
           <div class="context-wrapper">
@@ -103,5 +123,14 @@
         </div>
       </secton>
     </main>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
   </body>
 </html>

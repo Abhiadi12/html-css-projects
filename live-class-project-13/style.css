@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@316;400&family=Open+Sans:wght@300;400&family=Oswald:wght@300&family=Red+Rose:wght@300;400&family=Roboto:wght@100;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@316;400&family=Open+Sans:wght@300;400&family=Oswald:wght@300&family=Red+Rose:wght@300;400&family=Roboto:wght@100;300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -16,7 +16,7 @@ header {
   /* border: 1px solid red; */
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  background-color: #5A20CB;
+  background-color: #5a20cb;
   padding-left: 10%;
   height: auto;
 }
@@ -55,9 +55,13 @@ nav {
   color: #8ac0f1;
 }
 
+.hamburger {
+  display: none;
+}
+
 .btn-blue {
   outline: none;
-  background-color: #1B98F5;
+  background-color: #1b98f5;
   color: white;
   font-size: 16px;
   letter-spacing: 0.35px;
@@ -150,7 +154,6 @@ nav {
   padding-left: 20px;
 }
 
-
 .options h6 {
   font-weight: 600;
   letter-spacing: 0.25px;
@@ -164,7 +167,7 @@ nav {
 }
 
 .arrow1::before {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url(./assets/share-arrow1.svg);
   display: inline-block;
@@ -175,7 +178,7 @@ nav {
 }
 
 .arrow2::before {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url(./assets/share-arrow2.svg);
   display: inline-block;
@@ -186,7 +189,7 @@ nav {
 }
 
 .arrow3::before {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url(./assets/share-arrow3.svg);
   display: inline-block;
@@ -228,7 +231,6 @@ nav {
   margin: 0 auto;
   display: flex;
   gap: 10px;
-  /* border: 1px solid red; */
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -254,7 +256,7 @@ nav {
   transform: scale(1.5);
   position: absolute;
   top: 30px;
-  left: 85px;
+  left: 38%;
 }
 
 .info {
@@ -281,12 +283,12 @@ nav {
   padding-bottom: 4px;
 }
 
-#text-white  {
+#text-white {
   color: white;
 }
 
 .card:first-child .info {
-  background-color: #5A20CB;
+  background-color: #5a20cb;
   color: white;
 }
 
@@ -294,5 +296,146 @@ button:hover {
   cursor: pointer;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #182c97;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 1040px) {
+  #mySidenav {
+    display: none;
+    background-color: #5a20cb;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cards {
+    width: 85%;
+  }
+  .card img {
+    transform: scale(1.2);
+  }
+  .links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 40px;
+  }
+  header {
+    padding-left: 5%;
+  }
+  .link {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-blue {
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    overflow: none;
+  }
+
+  .cards {
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card img {
+    left: 40%;
+  }
+  .saas-img-container img {
+    transform: scale(1.2);
+    margin-top: 25%;
+  }
+  .context-wrapper h4 {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 0;
+  }
+  .saas-img-container img {
+    margin-top: 50%;
+  }
+  .heading-section {
+    flex-direction: column;
+  }
+  .left-section {
+    width: 100%;
+    padding-left: 30px;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .right-section img {
+    transform: scale(0.8);
+  }
+  .context-wrapper {
+    padding-top: 4em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .side-aside {
+    padding-left: 10%;
+  }
+  .context-wrapper h4 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .saas-img-container img {
+    margin-top: 100%;
+  }
+  .side-aside h4 {
+    font-size: 20px;
+  }
+  .options p {
+    line-height: 20px;
+    font-size: 13px;
+  }
+}
