@@ -13,5 +13,6 @@
 ## Time Taken:
 
 - 8h to complete.
+- 3h to make it responsive
 
 ![screenshoot](./live-class-project-11/project11.png)
