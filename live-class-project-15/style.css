@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@316;400&family=Open+Sans:wght@300;400&family=Oswald:wght@300&family=Red+Rose:wght@300;400&family=Roboto:wght@100;300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@316;400&family=Open+Sans:wght@300;400&family=Oswald:wght@300&family=Red+Rose:wght@300;400&family=Roboto:wght@100;300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   height: 100vh;
   color: white;
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
 }
 
 /*** utils ***/
 #text-red {
   font-weight: 600;
-  color: #E21717;
+  color: #e21717;
 }
 
 #text-white {
@@ -60,20 +59,17 @@ body {
   margin-right: 20px;
 }
 
-.prt-50{
+.prt-50 {
   padding-top: 40px;
   /* padding-right: 50px; */
 }
-
 
 /*** header ***/
 
 header {
   height: 400px;
-  /* border: 1px solid red; */
 }
 nav {
-  /* border: 1px solid red; */
   height: 60px;
   display: flex;
   width: 100%;
@@ -100,7 +96,11 @@ nav ul li:hover {
   /* color: #E21717; */
   cursor: pointer;
 }
-
+.hamburger {
+  position: absolute;
+  right: 20px;
+  display: none;
+}
 /** hero section **/
 .hero-section {
   display: flex;
@@ -151,7 +151,7 @@ nav ul li:hover {
 
 .btn-con button {
   padding: 8px 16px;
-  color: white; 
+  color: white;
   outline: none;
   border: none;
   background: red;
@@ -161,10 +161,9 @@ nav ul li:hover {
 
 /*** experiemce section ***/
 #exp {
-  /* border: 1px solid red; */
   /* display: flex; */
   margin-top: -10px;
-  background: linear-gradient(to left, #0D0D0D 50%,  #242B2E 50%);
+  background: linear-gradient(to left, #0d0d0d 50%, #242b2e 50%);
 }
 
 .exp-center-wrapper {
@@ -185,14 +184,12 @@ nav ul li:hover {
   transform: scale(0.65);
 }
 
-
 .d-flex {
   /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
   gap: 24px;
 }
-
 
 .card-bg-black {
   /* border: 1px solid red; */
@@ -205,7 +202,7 @@ nav ul li:hover {
 .card-bg-red {
   /* border: 1px solid red; */
   padding: 32px 24px;
-  background-color: #E21717;
+  background-color: #e21717;
   max-width: 215px;
   /* height: 220px; */
 }
@@ -233,7 +230,7 @@ nav ul li:hover {
 }
 
 .know-more-btn {
-  color: #E21717;
+  color: #e21717;
   font-size: 15px;
   letter-spacing: 0.35px;
   font-weight: 500px;
@@ -253,10 +250,9 @@ nav ul li:hover {
   /* border: 1px solid red; */
 }
 
-
 .number-heading {
   font-size: 36px;
-  color: #E21717;
+  color: #e21717;
 }
 
 .white-heading-sm-2 {
@@ -408,4 +404,104 @@ footer {
 .social-links a {
   padding-right: 24px;
   transform: scale(0.8);
+}
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+  nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .about-me-container {
+    width: 62%;
+  }
+  .user-picture {
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .img-container {
+    width: 70%;
+  }
+  .about-me-container h4 {
+    font-size: 32px;
+  }
+  .small-card {
+    height: 82px;
+  }
+  .feature-header,
+  .feature-cards {
+    width: 75%;
+  }
+  #connect {
+    width: 75%;
+  }
+  footer {
+    justify-content: center;
+  }
+  .footer-logo img {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .exp-center-wrapper {
+    width: 90%;
+  }
+  #connect {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-section {
+    display: block;
+  }
+  .img-container {
+    height: 400px;
+  }
+  #exp {
+    margin-top: 60%;
+  }
+  .about-me-container {
+    width: 100%;
+    align-items: center;
+    margin-top: -3em;
+  }
+  .about-me-container p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .d-flex {
+    flex-wrap: wrap;
+  }
+  .feature-header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .feature-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .feature-card {
+    width: 100%;
+  }
+  #connect {
+    width: 95%;
+    padding: 10;
+  }
+  #connect h4 {
+    font-size: 24px;
+  }
+  #bottom-nav ul {
+    font-size: 13px;
+  }
+  footer {
+    justify-content: space-evenly;
+  }
 }
