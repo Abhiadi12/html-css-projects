@@ -44,7 +44,7 @@ nav .rightBox a.active {
   border-radius: 5px;
 }
 .hamburger {
-  display: no;
+  display: none;
 }
 .nav-item {
   margin-right: 20px;
